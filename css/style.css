@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 
 *{
@@ -11,6 +12,7 @@
     width: 100%;
     height: 100px;
     background-color: rgb( 203, 44, 48);
+    
 
 }
 
@@ -67,7 +69,6 @@ nav a:hover{
 } 
 
 .sec{
-    border: 5px solid  rgb(254 ,221 ,0);;
     align-items: stretch;
     background-color: white;
     color: black;
@@ -79,7 +80,7 @@ nav a:hover{
 
 .newprincipal__foto{
 
-    background-image: repeating-linear-gradient(180deg,  rgba(255,255,255,0), rgba(203,48,44,1)), url(/img/helicoptero.jpg);
+    background-image: repeating-linear-gradient(180deg,  rgba(255,255,255,0), rgba(203,48,44,1)), url(/img/presidente.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -100,6 +101,8 @@ nav a:hover{
 }
 
 
+
+
 .sec:hover{
     zoom: 120%;
     opacity: 100%;
@@ -112,6 +115,7 @@ nav a:hover{
     flex-wrap: wrap;
     color: yellow;
 }
+
 .sec img{
     border-radius: 10px;
     
@@ -127,6 +131,33 @@ nav a:hover{
     text-align: justify;
 }
 
+.contenedor__noticias__menos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1em;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #beb9b9;
+    color: #fff;
+    padding-top: 10px;
+    
+}
+
+
+.contenedor__noticias__menos img {
+    width: 100%;
+    height: 150px;
+}
+
+.noticias__otras{
+    border: 2px solid rgb( 254, 221, 0);
+    padding: 5px;
+}
+
+.noticias__otras h2{
+text-align: center;
+}
 .contenedor__redes{
 
     background-color: #beb9b9;
@@ -136,12 +167,16 @@ nav a:hover{
 } 
 
 .H2{
-    border-bottom: 2px solid black;
-    border-top: 1px solid black;
+    border-bottom: 2px solid rgb( 254, 221, 0);
+    border-top: 1px solid rgb( 254, 221, 0);
     padding: 2px;
     text-align: center;
     margin: 5px 0 5px 0;
     height: 35px;
+    color: rgb(203, 44, 48);
+    font-family: 'Anton', sans-serif;
+    word-spacing: 15px;
+    letter-spacing: 10px;
 }
 
 h3{
@@ -164,7 +199,22 @@ h3{
 }
 
 
+.container__imgsemanal {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
 
+
+.container__imgsemanal img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
 
 
 footer{
@@ -260,7 +310,9 @@ margin-bottom: 10px;
 @media only screen and (max-width:402px){
 
     .H2{
-        font-size: 25px;
+        font-size: 15px;
+        word-spacing: 8px;
+        letter-spacing: 5px;
     }
 
     .contenedor__header{
@@ -312,6 +364,11 @@ margin-bottom: 10px;
         margin: 5px;
       
     }
+
+    .sec h2{
+        text-align: center;
+
+    }
     
     .newprincipal{
         grid-row: 1/2;
@@ -342,7 +399,7 @@ margin-bottom: 10px;
 
     .sec img{ 
         width: 100%;
-        height: 60%;
+        height: 70%;
         background-position: center;
         background-size: cover;
     }
@@ -405,7 +462,7 @@ margin-bottom: 10px;
 @media only screen and (min-width:403px) and (max-width:755px){
 
     .H2{
-        font-size: 25px;
+        font-size: 15px;
     }
 
     .contenedor__header{
@@ -460,9 +517,14 @@ margin-bottom: 10px;
 
         grid-row: 1/2;
         grid-column: 1/4;
-        padding: 0;
+        margin-top: 6px;
     }
 
+    .sec h2{
+        margin-left: 5px;
+        text-align: center;
+        font-size: 20px;
+    }
     .newprincipal h2{
         font-size: 30px;
         padding-top: 20%;
@@ -487,11 +549,16 @@ margin-bottom: 10px;
 
     .sec img{ 
         width: 100%;
-        height: 50%;
+        height: 60%;
         background-position: center;
         background-size: cover;
         margin: 0;
         padding: 0;
+    }
+ 
+
+    .titulo__principal{
+        font-size: 50px;
     }
 
 
@@ -566,13 +633,18 @@ margin-bottom: 10px;
         width: 100%;
         height: 440px;
         display: grid;
-        grid-template-rows: repeat(3,134px);   
-        grid-template-columns: 60% 39%;
         gap: 10px;
-
-    
     } 
 
+    .contenedor__noticias{
+        grid-template-rows: repeat(3,134px);   
+        grid-template-columns: 60% 39%;
+    } 
+
+    .contenedor__noticias2{
+        grid-template-rows: repeat(3,134px);   
+        grid-template-columns: 39% 60%;
+    } 
     .newprincipal{
         grid-row: 1/4;
         grid-column: 1/2;
@@ -588,8 +660,6 @@ margin-bottom: 10px;
         grid-row: 1/2;
         grid-column: 2/3;
         flex-direction: row;
-
-
     }
 
     .sec2{
@@ -620,6 +690,7 @@ margin-bottom: 10px;
 
     .sec h2{
         margin-left: 5px;
+        padding-left: 5px;
     }
 
     .H2{
@@ -640,6 +711,7 @@ margin-bottom: 10px;
         gap: 5%;
         padding: 10px;
     }
+
  
     .video{
         grid-row: 1/2;
@@ -662,57 +734,6 @@ margin-bottom: 10px;
         height: 80%;
     }
 
-    .container__imgsemanal{
-        width: 100%;
-        height: 700px;
-        background-color: blue;
-        color: #fff;
-        display: grid;
-        grid-template-rows: 200px 200px 200px;   
-        grid-template-columns: 45% 45%;
-        gap: 5%;
-        padding: 10px;
-    }
-    .img{
-        background-size: cover;
-        align-items: center;
-        justify-content: center;
-    }
- 
-    .img1{
-        grid-row: 1/2;
-        grid-column: 1/2;
-        margin: 0px;
-    }
-    .img2{
-        grid-row: 1/2;
-        grid-column: 2/3;
-
-    }
-
-     
-    .img3{
-        grid-row: 2/3;
-        grid-column: 1/2;
-        margin: 0px;
-    }
-    .img4{
-        grid-row: 2/3;
-        grid-column: 2/3;
-
-    }
-
-     
-    .img5{
-        grid-row: 3/4;
-        grid-column: 1/2;
-        margin: 0px;
-    }
-    .img6{
-        grid-row: 3/4;
-        grid-column: 2/3;
-    }
-
 
    
     footer{
@@ -727,6 +748,6 @@ margin-bottom: 10px;
         width: 50%;
     }
 
-   
+ 
 
 }
