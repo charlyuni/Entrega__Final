@@ -1,0 +1,55 @@
+
+@mixin sizes($width, $height, $bsize,$bgposi) {
+    height: $height;
+    width: $width;
+    background-size: $bsize;
+    background-position: $bgposi;
+}
+
+
+
+.bg2_container{
+    @include sizes(100%, 500px, cover,center);
+    background-image: url(../img/protesta2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 95px 0 0 0;
+    padding: 0;
+    border: 2px solid #333;
+    text-align: center;
+    font-size: 50px;
+    line-height: 200px;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.otra_seccion{
+    @extend .bg2_container;
+    background-image: url(../img/natacion.jpg);
+    margin-top: 30px;
+}
+
+.fotos__general{
+    @include sizes(100%, 300px, cover,center);
+    margin: 10px;
+    display: flex;
+}
+
+
+$bg-img: (
+    c1: url(../img/imagen4.jpg) ,
+    c2: url(../img/helicoptero.jpg),
+    c3: url(../img/futbol.jpg),
+    key1 : value1,
+    );
+
+@each $sec, $imagen in $bg-img {
+    .seccion__#{$sec} {
+        @include sizes(32%, 300px, cover,center);
+        background-image: $imagen;
+        overflow-y: hidden;
+        margin: 5px;
+    }
+}
+
+
