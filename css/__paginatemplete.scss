@@ -1,10 +1,8 @@
-
-
-.noticia__template{
+.noticia__template {
     margin-top: 100px;
     padding: 0;
 
-    h1{
+    h1 {
         display: flex;
         align-items: center;
         color: $color2;
@@ -19,12 +17,13 @@
 }
 
 
-.imagen__template{
+.imagen__template {
     height: 500px;
     width: 100%;
     margin: 0 0 10px 0;
     padding: 0;
-    img{
+
+    img {
         width: 80%;
         height: 100%;
         background-size: cover;
@@ -32,4 +31,3 @@
         align-items: center;
     }
 }
-

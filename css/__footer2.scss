@@ -1,6 +1,6 @@
 .footer {
     color: white;
-    
+
 
     .links {
         ul {
@@ -16,14 +16,15 @@
                 color: $color1;
             }
         }
-        h4{
+
+        h4 {
             overflow: hidden;
         }
     }
 
     .footer__nosotros {
         overflow: hidden;
-        
+
         i {
             font-size: 25px;
         }
@@ -36,10 +37,11 @@
                 color: $color1;
             }
         }
-        img{
+
+        img {
             width: 40%;
-            margin-left: 20px; 
-            height: 50%;      
+            margin-left: 20px;
+            height: 50%;
         }
     }
 
@@ -47,7 +49,8 @@
         i {
             font-size: 18px;
         }
-        h4{
+
+        h4 {
             overflow: hidden;
         }
     }

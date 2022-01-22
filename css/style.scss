@@ -53,6 +53,9 @@ nav {
     background-size: cover;
     text-align: center;
     opacity: 80%;
+    transition-property: font-size;
+    transition-duration: 4s;
+    transition-delay: 2s;
 
     h1 {
         display: flex;
@@ -77,6 +80,9 @@ nav {
     padding: 5px;
     border-bottom: 5px solid black;
     text-decoration: none;
+    transition-property: font-size;
+    transition-duration: 4s;
+    transition-delay: 2s;
 
     img {
         max-height: 140px;
@@ -94,6 +100,9 @@ nav {
 .sec:hover {
     zoom: 120%;
     opacity: 100%;
+    transition-property: font-size;
+    transition-duration: 4s;
+    transition-delay: 2s;
 }
 
 
@@ -175,13 +184,15 @@ h3 {
         margin-right: auto;
         display: block;
     }
-    a{
+
+    a {
         text-decoration: none;
     }
+
     a:hover {
         color: $color1;
         text-shadow: 1px 1px 2px black;
-        
+
     }
 }
 
@@ -212,7 +223,7 @@ h3 {
         width: 100%;
         height: auto;
         border-radius: 10px;
-        
+
     }
 }
 
@@ -300,13 +311,31 @@ footer {
     }
 }
 
-.container__footer{
-    .tamano_img img{
+.container__footer {
+    .tamano_img img {
         width: 40%;
+
     }
 }
 
+.contacto__form {
+    width: 100%;
+    background-image: linear-gradient(to right top, #cb2c30, #e45a24, #f6850f, #feb100, #fedd00);
+    padding: 10px;
+    margin: 5px;
 
+    form input {
+        margin: 0 0px 5px 10px;
+    }
+
+    form textarea {
+        margin: 0 0px 5px 10px;
+    }
+
+    p {
+        color: #fff;
+    }
+}
 
 
 
@@ -404,5 +433,4 @@ footer {
 }
 
 @import "__paginatemplete";
-@import "__pageentregaSassySEO";
 @import "__footer2";
