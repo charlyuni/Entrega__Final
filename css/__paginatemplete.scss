@@ -15,14 +15,12 @@
 
 }
 
-
 .imagen__template {
     height: auto;
     width: 100%;
     padding: 0;
     margin-bottom: 10px;
     
-
     img {
         width: 80%;
         height: 100%;
@@ -169,26 +167,31 @@
 
     .noticia__template {
         margin-top: 60px;
+        h1{
+            font-size: 20px;
+        }
     }
     .imagen__template{
         height: 50vh;
     }
-  }
-  
-  
-  
-  @media only screen and (min-width: 477px) {
+}
+
+
+@media only screen and (min-width: 477px) {
 
     .noticia__template {
         margin-top: 50px;
+        h1{
+            font-size: 30px;
+        }
     }
     .imagen__template{
         height: 60vh;
     }
-  }
-  
-  
-  @media only screen and (min-width: 783px) {
+}
+
+
+@media only screen and (min-width: 783px) {
 
     .noticia__template {
         margin-top: 15px;
@@ -196,6 +199,6 @@
     .imagen__template{
         height: 70vh;
     }
-  }
+}
 
 

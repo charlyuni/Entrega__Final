@@ -137,7 +137,7 @@ h3 {
 
 .row img {
   height: 60%;
-  width: 80%;
+  width: 70%;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -370,7 +370,7 @@ header {
 }
 
 .navbar-brand {
-  width: 70%;
+  width: 40%;
 }
 
 .btn__nav {
@@ -399,17 +399,16 @@ header {
   background-size: cover;
 }
 
-@media (max-width: 750px) {
-  .header__nav a {
-    width: 70%;
-  }
-}
 @media only screen and (max-width: 400px) {
   header {
-    padding-bottom: 60px;
+    padding-bottom: 40px;
+  }
+
+  .navbar-brand {
+    width: 40%;
   }
 }
-@media only screen and (min-width: 400px) and (max-width: 770px) {
+@media only screen and (min-width: 400px) and (max-width: 767px) {
   header {
     padding-bottom: 50px;
   }
@@ -417,6 +416,19 @@ header {
   nav img {
     height: 80px;
     max-width: 150px;
+  }
+
+  .navbar-brand {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) and (max-width: 850px) {
+  .header__nav a {
+    width: 70%;
+  }
+
+  .navbar-brand {
+    width: 30%;
   }
 }
 .noticia__template {
@@ -571,6 +583,9 @@ header {
   .noticia__template {
     margin-top: 60px;
   }
+  .noticia__template h1 {
+    font-size: 20px;
+  }
 
   .imagen__template {
     height: 50vh;
@@ -579,6 +594,9 @@ header {
 @media only screen and (min-width: 477px) {
   .noticia__template {
     margin-top: 50px;
+  }
+  .noticia__template h1 {
+    font-size: 30px;
   }
 
   .imagen__template {

@@ -12,9 +12,11 @@ header{
     z-index: 16;
     box-shadow: 2px 4px 6px 0 $color2;
 }
+
 .navbar-brand {
-    width: 70%;
+    width: 40%;
 }
+
 .btn__nav {
     justify-content: end;
 }
@@ -37,19 +39,18 @@ header{
     border: 1px solid $color2;
     background-size: cover;
 }
-@media (max-width:750px){
-    .header__nav{
-        a{
-            width: 70%;
-        }
-    }
-}
+
+
 @media only screen and (max-width:400px) {
     header{
-        padding-bottom: 60px;
+        padding-bottom: 40px;
+    }
+
+    .navbar-brand {
+        width: 40%;
     }
 }
-@media only screen and (min-width:400px) and (max-width:770px) {
+@media only screen and (min-width:400px) and (max-width:767px) {
     header{
         padding-bottom: 50px;
     }
@@ -57,4 +58,19 @@ header{
         height: 80px;
         max-width: 150px;
     }
+    .navbar-brand {
+        width: 80%;
+    }
+}
+@media (min-width:768px) and (max-width:850px) {
+    .header__nav{
+        a{
+            width: 70%;
+        }
+    }
+
+    .navbar-brand {
+        width: 30%;
+    }
+
 }
