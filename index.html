@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="shortcut icon" href="img/favicon.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -21,206 +21,176 @@
 </head>
 
 <body>
+    <!-- INICIO DE NAV -->
     <header>
-        <!-- navbar inicio -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-            <a class="navbar-brand" href="#">
-                <img src="img/logo.png" alt="logo" class="logo">
-            </a>
+        <nav class="header__nav navbar navbar-expand-md bg-color-nav ">
+            <a href="#"><img src="../img/logo3.png" alt="Logo" class="navbar-brand "></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
-                </span>
             </button>
-            <div class="collapse navbar-collapse  justify-content-end" id="collapsibleNavbar">
+            <div class="btn__nav offset-md-1 col-md-8 collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="page/tecno.html">Tecno</a>
+                        <a class="nav-link" href="../page/tecno.html" class="nav-link">Tecno</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="page/politica.html">Politica</a>
+                        <a class="nav-link" href="../page/politica.html" class="nav-link">Politica</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="page/economia.html">Economia</a>
+                        <a class="nav-link" href="../page/sociedad.html" class="nav-link">Sociedad</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="page/deporte.html">Deporte</a>
+                        <a class="nav-link" href="../page/deporte.html" class="nav-link">Deporte</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="page/contacto.html">Contacto</a>
+                        <a class="nav-link" href="../page/contacto.html" class="nav-link">Contacto</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
+    <!-- FIN DE NAV-->
 
-    <!-- nav bar final -->
-    <div class="espacui"></div>
     <!-- principales noticias inicio -->
     <main>
-        <div class="container-fluid shadow-lg p-3 mb-5 bg-white rounded main_margin">
-            <div class="row ">
-                <a class="col-xs-12 col-md-6 col-xl-8 col-lg-8 sec newprincipal deco-none" href="../page/politica.html">
-                    <h1 data-aos="fade-up" class=" align-self-end ">PRESIDENTE LATINOAMERICANO ACUSADO DE CURRUPCION
+        <div class="container-fluid shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="row main_margin ">
+                <a class="col-xs-12 col-md-6 col-xl-8 col-lg-8 sec newprincipal deco-none"
+                    href="../sociedad/noticia-1.html">
+                    <h1 data-aos="fade-up" class=" align-self-end ">COVID19 - Aumento descontrolado de contagios
                     </h1>
                 </a>
-                <div class="col-xs-12 col-md-6 col-xl-4 col-lg-4 display__img ">
-                    <a class="sec" href="#">
-                        <span class="badge">Sociedad</span>
-                        <img src="img/ejemplo1 (3).jpg" alt="">
-                        <h2 class="align-self-center">Movilización a tribunales</h2>
+                <div class="col-xs-12 col-md-6 col-xl-4 col-lg-4 cubre_seccion">
+                    <div class="sec ">
+                        <a href="../sociedad/noticia-2.html">
+                            <span class="badge">Sociedad</span>
+                            <img src="img/stock3.jpg" alt="stock">
+                            <h2 class="align-self-center">Faltan productos en gondolas</h2>
+                        </a>
+                    </div>
+                    <div class="sec">
+                        <a href="../deporte/noticia-1.html">
+                            <span class="badge ">Deportes</span>
+                            <img src="img/messi.jpg" alt="messi">
+                            <h2 class="align-self-center">Insolito: Messi a favor de Ronaldo</h2>
+                        </a>
+                    </div>
+                </div>
+                <!-- principales noticias final -->
+
+                <!-- Otras noticias inicio -->
+                <div class="row">
+                    <a class="column" href="../deporte/noticia-2.html">
+                        <span class="badge position-absolute">Deportes</span>
+                        <img src="img/arg-col.jpg" alt="argentina vs colombia" class="img1">
+                        <h2> Argentina vs Colombia</h2>
                     </a>
-                    <a class="sec" href="#">
-                        <span class="badge ">Politica</span>
-                        <img src="img/protesta2.jpg" alt="">
-                        <h2 class="align-self-center">Protesta de estudiantes</h2>
+                    <a class="column" href="../deporte/noticia-3.html">
+                        <span class="badge position-absolute">Deportes</span>
+                        <img src="img/nadal.jpg" alt="nadal" class="img2">
+                        <h2>Nadal está en semifinales</h2>
                     </a>
-                    <a class="sec" href="#">
-                        <span class="badge">Solidario</span>
-                        <img src="img/protesta1.jpg" alt="">
-                        <h2 class="align-self-center">Campaña de ayuda</h2>
+                    <a class="column" href="../deporte/noticia-4.html">
+                        <span class="badge position-absolute">Deporte</span>
+                        <img src="img/juegossuda.jpg" alt="juegos" class="img3">
+                        <h2>Juegos Sudamericanos </h2>
+                    </a>
+                    <a class="column" href="../sociedad/noticia-3.html">
+                        <span class="badge position-absolute">Sociedad</span>
+                        <img src="img/bus.jpg" alt="basket" class="img4">
+                        <h2>Aumento de colectivos</h2>
                     </a>
                 </div>
-            </div>
-        </div>
-        <!-- principales noticias final -->
+                <!-- Otras noticias final -->
 
-        <!-- Otras noticias inicio -->
-        <div class="row">
-            <a class="column" href="#">
-                <span class="badge position-absolute">Deportes</span>
-                <img src="img/atletusmo2.jpg" alt="foto atletismo" class="img1">
-                <h2>Maraton en Rosario</h2>
-            </a>
-            <a class="column" href="#">
-                <span class="badge position-absolute">Deportes</span>
-                <img src="img/natacion.jpg" alt="natacion" class="img2">
-                <h2>Torneo de natacion</h2>
-            </a>
-            <a class="column" href="#">
-                <span class="badge position-absolute">Deportes</span>
-                <img src="img/futbol.jpg" alt="futbol" class="img3">
-                <h2>El futbol de fin de semana</h2>
-            </a>
-            <a class="column" href="#">
-                <span class="badge position-absolute">Deportes</span>
-                <img src="img/basket2.jpg" alt="basket" class="img4">
-                <h2>Ciclon Campeon</h2>
-            </a>
-
-            <!-- Otras noticias final -->
-
-
-
-            <!-- REDES INICIO -->
-
-            <section class="container-fluid">
-                <h2 class="H2  animate__animated animate__slideInLeft animate__slower animate__infinite">EN REDES ESTO
-                    SE DICE</h2>
-                <div class="row mt-5">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-xl-6 col-lg-6">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item"
-                                src="https://www.youtube.com/embed/H82JtGbzYBI?autoplay=1?controls=0?showinfo=0"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                <!-- REDES INICIO -->
+                <section class="container-fluid">
+                    <h2 class="H2  animate__animated animate__slideInLeft animate__slower animate__infinite">
+                        EN REDES ESTO SE DICE</h2>
+                    <div class="row mt-5">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-xl-6 col-lg-6">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item"
+                                    src="https://www.youtube.com/embed/H82JtGbzYBI?autoplay=1?controls=0?showinfo=0"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-xl-6 col-lg-6 twitter">
+                            <a class="twitter-timeline" data-height="400"
+                                href="https://twitter.com/LANACION?ref_src=twsrc%5Etfw">Tweets by LANACION</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-xl-6 col-lg-6 twitter">
-                        <a class="twitter-timeline" data-height="400"
-                            href="https://twitter.com/LANACION?ref_src=twsrc%5Etfw">Tweets by LANACION</a>
-                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </section>
+                <!-- REDES FINAL -->
+
+                <!-- Imagenes de la semana inicio -->
+                <section>
+                    <h2 class="H2  animate__animated animate__slideInLeft animate__slower animate__infinite">
+                        Imagenes de la semana </h2>
+                    <div class="container__imgsemanal">
+                        <a href="politica/noticia-2.html"><img src="img/tropa.jpg" alt="tropa"></a>
+                        <a href="politica/noticia-3.html"> <img src="img/dolar.jpg" alt="dolar"></a>
+                        <a href="tecno/noticia-1.html"> <img src="img/whatsapp.jpg" alt="whatsapp"></a>
+                        <a href="tecno/noticia-3.html"> <img src="img/bit.jpg" alt="hacker"></a>
+                        <a href="sociedad/noticia-3.html"> <img src="img/economia1 (6).jpg" alt="colectivo"></a>
+                        <a href="tecno/noticia-4.html"> <img src="img/economia1 (5).jpg" alt="Pay"></a>
+                        <a href="politica/noticia-2.html"> <img src="img/protesta1.jpg"
+                                alt="El deporte de fin de semana"></a>
+                        <a href="sociedad/noticia-3.html"> <img src="img/protesta2.jpg"
+                                alt="no se llega a fin de mes"></a>
                     </div>
-                </div>
-            </section>
-
-            <!-- REDES FINAL -->
-
-            <!-- Imagenes de la semana inicio -->
-
-            <section>
-                <h2 class="H2  animate__animated animate__slideInLeft animate__slower animate__infinite">Imagenes de la
-                    semana
-                </h2>
-
-                <div class="container__imgsemanal">
-                    <img src="img/helicoptero.jpg" alt="Helicoptero presidencial" class="zoom_img">
-                    <img src="img/tecno/tecno1.jpg" alt="Lo ultimo en tecnologia" class="zoomimg">
-                    <img src="img/protesta.jpg" alt="protesta univercitaria">
-                    <img src="img/protesta1.jpg" alt="Marcha por la paz">
-                    <img src="img/protesta2.jpg" alt="Marcha en USA">
-                    <img src="img/tecno/Tecno1m (2).jpg" alt="Nuevas pc en el mercado">
-                    <img src="img/deporte/deporte1 (7).jpg" alt="El deporte de fin de semana">
-                    <img src="img/economia/economia1 (6).jpg" alt="no se llega a fin de mes">
-                </div>
-            </section>
-
-
-            <!-- Imagenes de la semana FINAL -->
+                </section>
+                <!-- Imagenes de la semana FINAL -->
     </main>
 
-
-
     <!-- FOOTER INICIO -->
+    <div class="container-fluid"></div>
     <footer>
-        <div class="container__footer bg-dark">
-            <div class="row tamano_img">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-xl-3 col-lg-3  overflow-hidden">
-                    <img src="../img/logo.png" class="logo-footer">
-                    <h2>El mejor portal de Santa Fe</h2>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-xl-3 col-lg-3 align-self-center">
-                    <h2>
-                        Temas relacionados
-                    </h2>
-                    <ul>
-                        <li> <a href="#">Tema 1</a></li>
-                        <li> <a href="#">Tema 2</a></li>
-                        <li> <a href="#">Tema 3</a></li>
-                    </ul>
 
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-xl-3 col-lg-3 align-self-center">
-                    <h2>
-                        Datos de contacto
-                    </h2>
-                    <ul>
-                        <li> contacto@labotanoticias.com.ar </li>
-                        <li> Rosario<br> Santa Fe</li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-xl-3 col-lg-3 align-self-center ">
-                    <h2>
-                        Redes sociales
-                    </h2>
-                    <ul class="redes2">
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        <section class="footer__cab">
+            <div class="footer__cab-item">
+                <img src="../img/logo.png" class="logo-footer">
+
             </div>
-        </div>
-        <div class="bg-dark">
-            &copy; Coder - Actis Derechos reservados -2022
-        </div>
-    </footer>
+            <div class="footer__cab-item">
+                <h5 class="fotter-title">Temas relacionados </h5>
+                <ul>
+                    <li> <a href="../sociedad/noticia-1.html">Covid 19</a></li>
+                    <li> <a href="../sociedad/noticia-2.html">Faltante de alimentos</a></li>
+                    <li> <a href="../sociedad/noticia-3.html">Aumento en servicios</a></li>
+                </ul>
+            </div>
+            <div class="footer__cab-item">
+                <h2 class="fotter-title">Contacto</h2>
+                <ul>
+                    <li> contacto@labotanoticias.com.ar </li>
+                    <li> Rosario<br> Santa Fe</li>
+                </ul>
+            </div>
+        </section>
 
+        <section class="footer-social">
+            <ul class="footer-social-lista">
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="mailto:contacto@labotanoticias.com.ar" target="_blank"><i class="fas fa-envelope"></i></a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="ft-legal">
+            <ul class="ft-legal-list">
+                <li>&copy; Coder - Actis Derechos reservados - 2022</li>
+            </ul>
+        </section>
+    </footer>
     <!-- FOOTER FINAL -->
 
-    <!-- Bootstrap and animaciones inicio -->
+
+    <!-- Bootstrap y animaciones inicio -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
@@ -236,7 +206,6 @@
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
     </script>
     <!-- Bootstrap and animaciones fin -->
-
 </body>
 
 </html>

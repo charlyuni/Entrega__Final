@@ -1,5 +1,4 @@
 .noticia__template {
-    margin-top: 100px;
     padding: 0;
 
     h1 {
@@ -18,10 +17,11 @@
 
 
 .imagen__template {
-    height: 500px;
+    height: auto;
     width: 100%;
-    margin: 0 0 10px 0;
     padding: 0;
+    margin-bottom: 10px;
+    
 
     img {
         width: 80%;
@@ -31,3 +31,171 @@
         align-items: center;
     }
 }
+
+
+
+.contenedor {
+    min-height: 550px;
+    width: 100%;
+    background-image: linear-gradient(to right top, #cb2c30, #e45a24, #f6850f, #feb100, #fedd00);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 4%;
+    margin-top: 1%;
+}
+
+.card {
+    height: 400px;
+    width: 250px;
+    border: 5px solid $color1;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+
+.efect1 {
+    height: calc(400px - 10px);
+    width: calc(250px - 10px);
+    background-color: $color1;
+    transform: translateY(350px);
+    text-align: center;
+    color: white;
+
+    i {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        text-transform: uppercase;
+        font-size: 1.7rem;
+    }
+    p{
+        padding: 0 10px 0 10px;
+        text-align: justify;
+        overflow: hidden;
+    }
+}
+
+.efect1:hover {
+    transform: translateY(0px);
+    transition: all 0.7s;
+}
+
+
+
+.card1 {
+    background-image: url(../img/maradona.png);
+}
+
+.card2 {
+
+    background-image: url(../img/bataglia.jpg);
+}
+
+.card3 {
+    background-image: url(../img/nehuen.jpg);
+}
+
+.card4 {
+    background-image: url(../img/tevez.jpg);
+}
+
+.card1_sociedad {
+    background-image: url(../img/maestros.jpg);
+}
+
+.card2_sociedad {
+
+    background-image: url(../img/nazi.png);
+}
+
+.card3_sociedad {
+    background-image: url(../img/espionajes.jpg);
+}
+
+.card4_sociedad {
+    background-image: url(../img/sequia.jpg);
+}
+
+
+
+.card1__politica {
+    background-image: url(../img/kulfas.jpg);
+}
+
+.card2__politica {
+
+    background-image: url(../img/cannabis.jpg);
+}
+
+.card3__politica {
+    background-image: url(../img/censo.jpg);
+}
+
+.card4__politica {
+    background-image: url(../img/tictoc.jpg);
+}
+
+.card1__tecno{
+    background-image: url(../img/tiktok.jpeg);
+}
+
+.card2__tecno {
+
+    background-image: url(../img/netflix.jpg);
+}
+
+.card3__tecno {
+    background-image: url(../img/esp.jpg);
+}
+
+.card4__tecno {
+    background-image: url(../img/pay.png);
+}
+
+.list-group{
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    font-weight: bold;
+}
+
+
+
+@media only screen and (max-width: 477px) {
+
+    .noticia__template {
+        margin-top: 60px;
+    }
+    .imagen__template{
+        height: 50vh;
+    }
+  }
+  
+  
+  
+  @media only screen and (min-width: 477px) {
+
+    .noticia__template {
+        margin-top: 50px;
+    }
+    .imagen__template{
+        height: 60vh;
+    }
+  }
+  
+  
+  @media only screen and (min-width: 783px) {
+
+    .noticia__template {
+        margin-top: 15px;
+    }
+    .imagen__template{
+        height: 70vh;
+    }
+  }
+
+

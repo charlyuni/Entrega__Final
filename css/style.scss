@@ -2,8 +2,10 @@
 
 /* font-family: 'Encode Sans', sans-serif; */
 
-$color1: rgb(203, 44, 48);
+$color1: rgb(201, 44, 49);
 $color2: rgb(254, 221, 0);
+$color3: rgb(54, 76, 115);
+$color4: rgb(0, 145, 134);
 $font1: 'Encode Sans',
 sans-serif;
 
@@ -15,47 +17,70 @@ sans-serif;
 }
 
 
-
-nav {
-    background-color: $color1;
-
-    img {
-        width: 100px;
-        height: 70px;
-    }
-}
-
-.nav-link {
-    margin-right: 35px;
-}
-
-.nav-item {
-    a {
-        font-size: 25px;
-        letter-spacing: 4px;
-        font-family: $font1;
-        font-weight: 900;
-    }
-}
-
 .container-fluid {
     margin-left: 10px;
 }
 
-.main_margin {
-    margin-top: 100px;
+.cubre_seccion{
+    overflow: hidden;
 }
 
+.sec {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 5px;
+    border-bottom: 3px solid $color1;
+    text-decoration: none;
+    margin-bottom: 5px;    
+    height: 49%;
+    overflow: hidden;
+
+    img {
+        max-width: 70%;
+        background-size: cover;
+        background-position: left;
+        border-radius: 10px;
+        height: 60%;
+    }
+
+    h2 {
+        margin-left: 5px;
+        text-align: center;
+        font-weight: 600;
+        color: black   ; 
+    }
+}
+
+
+.cubre_seccion:hover {
+    zoom: 120%;
+    opacity: 100%;
+    transition: all 0.7s;
+    span{
+        zoom:80%;
+    }
+}
+
+.sec:hover {
+    zoom: 120%;
+    opacity: 100%;
+    transition: all 0.7s;
+    span{
+        zoom:80%;
+    }
+}
 .newprincipal {
-    height: 500px;
-    background-image: repeating-linear-gradient(180deg, rgba(255, 255, 255, 0), $color1), url(/img/presidente.jpg);
+    height: 460px;
+    background-image: repeating-linear-gradient(180deg, rgba(255, 255, 255, 0), $color1), url(/img/covid.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
     opacity: 80%;
-    transition-property: font-size;
-    transition-duration: 4s;
-    transition-delay: 2s;
+
 
     h1 {
         display: flex;
@@ -69,43 +94,6 @@ nav {
     }
 }
 
-.sec {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    background-color: white;
-    color: black;
-    margin: 0px 0 15px 0;
-    border-radius: 15px;
-    padding: 5px;
-    border-bottom: 5px solid black;
-    text-decoration: none;
-    transition-property: font-size;
-    transition-duration: 4s;
-    transition-delay: 2s;
-
-    img {
-        max-height: 140px;
-        background-size: cover;
-        border-radius: 10px;
-    }
-
-    h2 {
-        margin-left: 5px;
-        text-align: center;
-        font-weight: 600;
-    }
-}
-
-.sec:hover {
-    zoom: 120%;
-    opacity: 100%;
-    transition-property: font-size;
-    transition-duration: 4s;
-    transition-delay: 2s;
-}
-
-
 
 span {
     font-size: 10px;
@@ -118,34 +106,24 @@ span {
     border-top: 1px solid $color2;
     padding: 4px;
     text-align: center;
-    margin: 5px 0 5px 0;
-    height: 35px;
+    margin: 0px 0 5px 0;
     color: $color1;
     font-family: $font1;
     word-spacing: 15px;
     letter-spacing: 10px;
-    font-weight: 900;
     text-transform: uppercase;
-    height: 75px;
+    font-weight: 900;
     margin: 10px 0 3px 0;
     font-size: 4.5vw;
     overflow: unset;
 }
 
-h3 {
-    color: #fff;
-    background-image: linear-gradient(to right top, #cb2c30, #e45a24, #f6850f, #feb100, #fedd00);
-    padding: 10px;
-    word-spacing: 5px;
-    text-align-last: center;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+h3{
+    overflow: hidden;
 }
 
-
 .NP_H2 {
-    margin-top: 100px;
+    margin-top: 5px;
 }
 
 .sec::after {
@@ -166,6 +144,7 @@ h3 {
     border: 5px solid #fff;
     height: 250px;
     overflow: hidden;
+
 }
 
 .row::after {
@@ -192,19 +171,22 @@ h3 {
     a:hover {
         color: $color1;
         text-shadow: 1px 1px 2px black;
+        transition: all 0.7s;
 
     }
+
+    h2 {
+        top: 50%;
+        text-align: center;
+        padding: 5px;
+    }
+    
 }
 
 .sec span {
     position: absolute;
 }
 
-.row h2 {
-    top: 50%;
-    text-align: center;
-    padding: 5px;
-}
 
 .video {
     justify-content: center;
@@ -228,102 +210,37 @@ h3 {
 }
 
 .carousel-inner {
-    height: 400px;
+    height: 300px;
     width: 100%;
 }
 
-footer {
-    color: white;
-    margin: 0;
-    text-align: center;
-    overflow-x: hidden;
-
-    h2 {
-        font-size: 20px;
-        margin: 20px;
-    }
-
-    ul {
-        padding-left: 5px;
-        list-style: none;
-        margin: 0;
-        display: block;
-    }
-
-    p {
-        display: flex;
-        flex-direction: row;
-        font-size: 15px;
-        margin: 0;
-        padding: 0;
-        color: white;
-        display: inline-block;
-    }
-
-    a {
-        color: white;
-    }
-
-}
-
-.logo-footer {
-    margin-top: 30px;
-    max-height: 120px;
-}
-
-
-.redes2 {
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-
-    a {
-        margin: 0 8px 0 0;
-        color: white;
-    }
-}
-
-
 .seccion__carrousel {
     margin: 10px 0 10px 0;
-    height: 550px;
+    height: 450px;
 }
 
 .carousel-inner {
-    height: 550px;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+
 }
 
 .carousel-item img {
     width: 100%;
-    height: 80%;
+    height: 50%;
     background-size: cover;
 }
 
-.noticias__destacadas__politica {
-    margin: 20px;
-    background-image: linear-gradient(to right top, #cb2c30, #e45a24, #f6850f, #feb100, #fedd00);
-    padding: 20px;
 
-    img {
-        height: 100%;
-        width: 100%;
-    }
-}
 
-.container__footer {
-    .tamano_img img {
-        width: 40%;
-
-    }
-}
 
 .contacto__form {
-    width: 100%;
+    margin-top: 15px;
     background-image: linear-gradient(to right top, #cb2c30, #e45a24, #f6850f, #feb100, #fedd00);
-    padding: 10px;
-    margin: 5px;
-
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
     form input {
         margin: 0 0px 5px 10px;
     }
@@ -335,39 +252,72 @@ footer {
     p {
         color: #fff;
     }
+    .btn{
+        display: flex;
+        background-color: #fff;
+        color: $color1;
+    }
+}
+.btn:hover{
+    background-color: $color2;
+    border: $color2 3px solid;
 }
 
 
+.fondo__contacto{
+    height: 600px;
+    width: 100%;
+    background-image: url(../img/contact.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
 
-@media only screen and (max-width:540px) {
 
-    .container-fluid {
-        margin: 0 30px 0 10px;
+@media only screen and (max-width:400px) {
+
+    .cubre_seccion{
+        height: 450px;
     }
 
-    .sec {
+    span{
+        width: 20%;
+    }
+
+    .cubre_seccion {
         flex-direction: column;
         justify-content: end;
         margin-right: 10px;
 
         img {
-            width: 90%;
+            min-width: 80%;
             align-self: center;
         }
 
         span {
             position: relative;
+            width: 20%;
+        }
+
+    }
+
+    .sec h2{
+        font-size: 15px;
+        overflow: hidden;
+    }
+
+    .newprincipal {
+        margin: 15px 20px 0 20px;
+        height: 350px;
+        background-position: left;
+
+        h1 {
+            font-size: 20px;
         }
     }
-
-    .column {
+    .column{
         width: 100%;
     }
-
-    .newprincipal h1 {
-        font-size: 20px;
-    }
-
     .seccion__carrousel {
         height: 200px;
     }
@@ -379,16 +329,34 @@ footer {
 
 .bg-footer {
     background-color: $color1;
+
+
+.H2{
+    height: 50px;
 }
 
 
 
-@media only screen and (min-width:540px) and (max-width:960px) {
+}
+@media only screen and (min-width:400px) and (max-width:767px) {
+
+.cubre_seccion{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 10px;
+    height: 250px;
+}
+
+.main_margin{
+    margin: 40px 10px 5px 10px;
+}
 
     .sec {
+        height: 100%;
         img {
-            width: 40%;
-            align-self: auto;
+            max-width: 90%;
+            margin-bottom: 5px;
         }
 
         h2 {
@@ -400,10 +368,12 @@ footer {
         width: 50%;
     }
 
-    .newprincipal h1 {
+    .newprincipal {
+        height:250px;
+    h1 {
         font-size: 25px;
     }
-
+}
     .seccion__carrousel {
         height: 250px;
     }
@@ -412,11 +382,20 @@ footer {
         height: 250px;
     }
 
+    
 
+    .H2{
+        height: 80px;
+    }
+    
 }
 
-@media only screen and (min-width:960px) {
+@media only screen and (min-width:767px) {
 
+    
+    .cubre_seccion{
+        height: 450px;
+    }
 
     .sec h2 {
         font-size: 20px;
@@ -426,11 +405,9 @@ footer {
         font-size: 45px;
     }
 
-    .logo-footer {
-        height: 100px;
-    }
+
 
 }
-
+@import "__header";
 @import "__paginatemplete";
-@import "__footer2";
+@import "__footer";
