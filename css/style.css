@@ -62,7 +62,7 @@
 
 .newprincipal {
   height: 460px;
-  background-image: repeating-linear-gradient(180deg, rgba(255, 255, 255, 0), #c92c31), url(/img/covid.jpg);
+  background-image: repeating-linear-gradient(180deg, rgba(255, 255, 255, 0), #c92c31), url(../img/covid.jpg);
   background-position: center;
   background-size: cover;
   text-align: center;
